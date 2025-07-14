@@ -166,7 +166,7 @@ def main():
             count += 1
             print(f"\n\nTraitement de l'item {count}/{countTraitement}: {item['Titre']}")
 
-            file_name = "nouveau_" + item["Fichier"]
+            file_name = item["Fichier"]
             pdf_file = os.path.join(PDF_FOLDER, file_name)
             if not os.path.exists(pdf_file):
                 print(f"Le fichier {pdf_file} n'existe pas.")
